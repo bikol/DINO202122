@@ -15,6 +15,13 @@
   
   <h1><code>git add .</code></h1>
   <p>Komenda dodaje wszystkie pliki znajdujące się w obecnym katalogu i wszystkich podkatalogach do plików śledzonych przez git-a</p>
+  
+  <h1><code>gitk --all </code></h1>
+  <p>gitk jest to gui wbudowane w git'a, które wyświetla zmiany dokonane w repozytorium poprzez graf commit'ów oraz wyświetla informacje dotyczące każdego commit'a. 
+	Flaga --all daje pełnieszy wgląd w repozytorium, poprzez pokazywanie innych branch'ów, nie tylko tego w którym się znajdujemy oraz tagów itp.</p>
+
+  <h1><code>git diff --staged</code></h1>
+  <p>Pokazuje dokładne zmiany pomiedzy twoim indexem, a ostatnim commitem. Komenda służy do sprawdzenia, jakie zmiany zajdą w repozytorium, jeżeli użyjemy komendy <code>git commit</code>.</p>
 
   <h1><code>git log --graph --all</code></h1>
   <p>Tworzy wykres w wierszu poleceń pozwalający zwizualizować stan repozytorium oraz wszystkich jego gałęzi. <code>--graph</code> tworzy graf ASCII pokazujący historię commitów i branchów, natomiast <code>--all</code> pokazuje wszystkie gałęzie (nawet te, które nie znajdują się w gałęzi głównej).</p>
