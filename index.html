@@ -10,23 +10,36 @@
   
 <body>
 
+  <hr>
   <h1><code>git config --global user.name ""</code></h1>
   <p>Komenda pozwala ustawić nazwę użytkownika Git. <code>--global</code> sprawia że Git użyje tych informacji do wszystkich rzeczy wykonywanych na systemie</p>
+  <hr>
   
+  <a id='go_here_1'></a>
   <h1><code>git add .</code></h1>
   <p>Komenda dodaje wszystkie pliki znajdujące się w obecnym katalogu i wszystkich podkatalogach do plików śledzonych przez git-a</p>
-  
+  <hr>
+	
   <h1><code>gitk --all </code></h1>
   <p>gitk jest to gui wbudowane w git'a, które wyświetla zmiany dokonane w repozytorium poprzez graf commit'ów oraz wyświetla informacje dotyczące każdego commit'a. 
 	Flaga --all daje pełnieszy wgląd w repozytorium, poprzez pokazywanie innych branch'ów, nie tylko tego w którym się znajdujemy oraz tagów itp.</p>
-
+  <hr>
+	
   <h1><code>git diff --staged</code></h1>
   <p>Pokazuje dokładne zmiany pomiedzy twoim indexem, a ostatnim commitem. Komenda służy do sprawdzenia, jakie zmiany zajdą w repozytorium, jeżeli użyjemy komendy <code>git commit</code>.</p>
-
   <hr>
+	
+  <h1><code>git commit -a -m "treść wiadomości"</code></h1>
+  <p>Komenda służy do utworzenia nowego commit'a.
+	  Flaga <code>-a</code> (inaczej <code>--all</code>) dodaje do commit'a wszystkie zmodyfikowane i usunięte pliki z dotychczas śledzonych (patrz <a href='#go_here_1'><code>git add</code></a>).
+	  Flaga <code>-m</code> (inaczej <code>--message</code>) pozwala dodać wiadomość zawierającą opis commit'a.
+     Komenda <code>git commit</code> jest niezbędna w pracy z repozytorium. Używanie flagi <code>-m</code> jest istotne i pozwala na lepsze kontrolowanie wprowadzanych zmian.</p>
+  <hr>
+	
   <h1><code>git branch "name"</code></h1>
   <p>Komenda tworzy brancha o wpisanej nazwie</p>
   <hr>
+	
   <h1><code>git branch -d "branch"</code></h1>
   <p>Komenda usuwa brancha o podanej nazwie</p>
   <hr>
