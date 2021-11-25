@@ -18,6 +18,10 @@
   <a id='go_here_1'></a>
   <h1><code>git add .</code></h1>
   <p>Komenda dodaje wszystkie pliki znajdujące się w obecnym katalogu i wszystkich podkatalogach do plików śledzonych przez git-a</p>
+  
+  <h1><code>git checkout "branch"</code></h1>
+  <p>Komenda pozwala na zmianę gałęzi na <code>branch</code>. Należy pamiętać, że gałąź musi zostać już wcześniej utworzona!</p>
+  
   <hr>
 	
   <h1><code>gitk --all </code></h1>
@@ -46,9 +50,16 @@
 
   <h1><code>git checkout -b "branch"</code></h1>
   <p>Komenda pozwa na przejście na gałąź o nazwie "branch". <code> -b </code> sprawia ze jeśli nie ma gałęzi o takiej nazwie to ją tworzy.</p>
+
 	
   <h1><code>git push "remote" "branch"</code></h1>
   <p>Komenda wysyła wszystkie zmiany zapisane lokalie(po commicie) na serwer. "remote", to repozytorium na które chcemy wysłać push-a, a "branch" to branch na który chcemy wysłać pusha.</p>
+
+  <hr>
+  
+  <h1><code>git log --graph --all</code></h1>
+  <p>Tworzy wykres w wierszu poleceń pozwalający zwizualizować stan repozytorium oraz wszystkich jego gałęzi. <code>--graph</code> tworzy graf ASCII pokazujący historię commitów i branchów, natomiast <code>--all</code> pokazuje wszystkie gałęzie (nawet te, które nie znajdują się w gałęzi głównej).</p>
+  <hr>
   
 </body>
 </html>
